@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px;
+    overflow-y: scroll;
+    text-align: center;
+}
+.content{
+    text-align: center;
+}
+.content .imagemLogo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid #000000;
+}
+.content h1{
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.content h2{
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.content .links{
+    width: 90vw;
+    margin-top: 20px;
+}
+.content .links .link, .sites{
+    width: 100%;
+    border: 1px solid #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.content .links .link:hover, .sites:hover{
+    background-color: #05050536;
+}
+.content .links .link:nth-child(1){
+    background-color: #ca0e0e;
+    border: none;
+    color: #ffffff;
+}
+.content .links .link:nth-child(1):hover{
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
+.content .links .link .emailCopied{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.content .links .link:hover .emailCopied{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    opacity: 1;
+}
+.logo{
+    z-index: 1000;
+    height: 80px;
+}
+@media (min-width: 600px)
+{
+    .content .imagemPerfil{
+        width: 150px;
+        height: 150px;
+    }
+    .content .links{
+        width: 300px !important;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .content .links .link{
+        height: 40px;
+    }
+}
+
+.divSites{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sites{
+    width: 25% !important;
+}
